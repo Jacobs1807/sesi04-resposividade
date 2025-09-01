@@ -37,10 +37,11 @@ body{
 }
 
 .title{
-    color: var(--gray);
+    color: var(--light-blue);
     font-family: "Inter", sans-serif;
     margin-bottom: 10px;
     font-size: 26px;
+    
 }
 
 .text{
@@ -50,9 +51,39 @@ body{
     line-height: 30px;
 }
 
-line1{
+.line1{
     height: 3px;
     background-color: var(--gray);
     width: 100%;
     margin-bottom: 0 auto;
+}
+
+@media(width >= 768px){
+    .s1{
+        min-height: 80vh;
+        background-image: url(../images/bakcgroundDesk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .img{
+        display: none;
+    }
+    .title{
+        font-size: 100px;
+    }
+    .line1{
+        display: none;
+    }
+
+    .text{
+        font-size: 38px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0);
+        line-height: 55px;
+    }   
 }
